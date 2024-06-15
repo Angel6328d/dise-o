@@ -1,0 +1,203 @@
+/** Estilos para el cuerpo del documento **/
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+/** Estilos para el contenedor del buscador **/
+.contenedor_buscador {
+    padding-right: 4rem;
+}
+
+.contenedor_buscador button {
+    height: 2rem;
+    margin-left: 0.7rem;
+    padding: 0rem 2rem;
+    font-size: 0.8rem;
+}
+
+.contenedor_buscador input[type="text"] {
+    color: white;
+    text-indent: 2rem;
+    text-align: justify;
+    height: 1.5rem;
+    background: transparent;
+    border: solid white 0.1rem;
+    border-radius: 0.4rem;
+}
+
+.nav_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: aliceblue;
+}
+
+.nav_principal .barra {
+    display: flex;
+}
+
+.nav_principal .barra a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.nav_principal .barra a:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+}
+
+.hero {
+    background-color: #f0f0f0; /* Color de fondo */
+    background-image: url('/img/firefly-honkai-star-rail-8k-pq.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Cubrir completamente el área del header */
+    background-position: center center; /* Centrar la imagen de fondo */
+    padding: 20px; /* Ajustar el padding según necesites */
+    text-align: center; /* Centrar el contenido dentro del header */
+}
+
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.boton_ingresar a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    border: 1px solid aliceblue;
+    border-radius: 0.3rem;
+}
+
+.boton_ingresar a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.social-logos {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.social-logos .logotipo {
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    margin-right: 0.5rem;
+}
+
+/* Estilos para los enlaces dentro de <main class="hero"> */
+.main.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px; /* Agrega un margen entre los botones */
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.main.hero a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #0056b3; /* Cambia el color del borde al pasar el mouse */
+}
+
+/* Estilos para el encabezado <h1> */
+.main.hero h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el contenedor del SVG y el texto */
+.main.hero .contenedor_hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de contacto */
+.main.hero .boton_contacto {
+    text-align: center;
+}
+
+.main.hero .boton_contacto a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo */
+    border: 1px solid #28a745; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.main.hero .boton_contacto a:hover {
+    background-color: #218838; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #218838; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+.boton_contacto {
+    margin-top: 1rem;
+}
+
+.conjunto_servicios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.servicio {
+    flex: 0 0 30%; /* Ajusta el tamaño del servicio según tus necesidades */
+    margin-bottom: 1rem;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.servicio h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.servicio p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.servicio a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.servicio a:hover {
+    color: #555;
+}
+
+.servicio a.boton-saber-mas {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.servicio a.boton-saber-mas:hover {
+    background-color: #0056b3;
+    color: white;
+}

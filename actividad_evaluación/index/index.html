@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="/img/a5b85190-bfff-4aed-bdc1-6890df8686c0.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM34</title>
+
+    <!--Aqui entraran todos los estilos-->
+    <link rel="stylesheet" href="/css/lorem.css">
+    <link rel="stylesheet" href="/css/normalys.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos CSS para la página */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav_principal {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .barra a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .buscador {
+            margin-right: 20px;
+        }
+
+        .buscador input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .buscador button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .boton_ingresar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid white;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+
+        .social-logos {
+            display: flex;
+        }
+
+        .logotipo {
+            margin-right: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 50px 20px;
+        }
+
+        .contenedor_hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .boton_contacto {
+            margin-top: 20px;
+        }
+
+        .boton_contacto a {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .conjunto_servicios {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .servicio {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicio img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .servicio h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .servicio p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .servicio a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .Bloque_1_portal {
+            background-color: #333;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .Centrado_bloque_portal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .conjunto_portal {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .portal img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .portal.texto {
+            text-align: left;
+            max-width: 400px;
+        }
+
+        .portal.texto h3 {
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        .portal.texto p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .portal.texto a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .titulo_centrado2 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 32px;
+        }
+
+        .videojuegos .conjunto_servicios {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .videojuegos .servicio {
+            flex-basis: calc(33.33% - 40px);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .conjunto_servicios,
+            .videojuegos .conjunto_servicios {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .servicio {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav_principal">
+        <nav class="barra">
+             <div>
+            <a href="#" target="_blank">mail@gmail.com</a>
+            |
+            <a href="#" target="_blank">www.paginaweb.com</a>
+        </div>
+
+        </nav>
+       
+        <div class="right-section">
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+            <div class="boton_ingresar">
+                <a href="/registro.html">Ingresar</a>
+            </div>
+            <div class="social-logos">
+                <a href="https://www.instagram.com">
+                    <img class="logotipo" src="/img/OI.jpeg" alt="Logotipo Instagram" width="50">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="logotipo" src="/img/f.png" alt="Logotipo Facebook" width="50">
+                </a>
+                <a href="https://x.com/?logout=1718253353270">
+                    <img class="logotipo" src="/img/1.jpeg" alt="Logotipo Twitter" width="50">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero">
+          <a href="#">Inicio</a>
+          <a href="#">Servicio</a>
+          <a href="#">Contacto</a>
+        <h1>Videojuego</h1>
+        <div class="contenedor_hero">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <image href="/img/5.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"/>
+            </svg>
+            <p>Cancun Q.Roo</p>
+        </div>
+        <div class="boton_contacto">
+            <a href="contacto.html" target="_blank">Contactanos</a>
+        </div>
+    </main>
+
+    <section>
+        <div class="conjunto_servicios contenedor">
+            <div class="servicio">
+                <img src="/img/b44497cc-a583-4255-84c4-fc78a677ef6f.jpeg" alt="Servicio1">
+            </div>
+            <div class="servicio">
+                <h3>VideoJuegos</h3>
+                <p>Bienvenido a SM34, tu destino definitivo para descubrir los videojuegos más emocionantes y cautivadores del momento.
+                    Sumérgete en un universo de diversión sin límites mientras exploras nuestra colección cuidadosamente seleccionada de títulos destacados por su innovación y entretenimiento.</p>
+                    <a href="#" class="boton-saber-mas">Saber más ...</a>
+            </div>
+            <div class="servicio">
+                <img src="/img/ee38d378-9470-4dc3-a501-2ddd9ee8d35d.jpeg" alt="Servicio3">
+            </div>
+        </div>
+
+        <section class="Bloque_1_portal">
+            <div class="Centrado_bloque_portal">
+                <div class="conjunto_portal contenedor">
+                    <div class="portal imagen">
+                        <img src="/img/d4913445-309f-46a8-b5e6-28cfd47a896d.jpeg" alt="Rango1">
+                    </div>
+                    <div class="portal texto">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Nuestro equipo de expertos gamers está constantemente actualizando nuestra biblioteca para asegurarnos de que siempre tengas acceso a lo último y lo mejor en el mundo de los videojuegos.
+                            Ya sea que busques explorar mundos fantásticos, competir en emocionantes batallas multijugador, o simplemente relajarte con un juego casual, en SM34 encontrarás exactamente lo que necesitas.</p>
+                        <a href="#" class="boton-saber-mas">Saber más ...</a>
+                    </div>
+                </div>
+            </div>
+        </section
+
+
+
+
+        <section class="videojuegos">
+            <h2 class="titulo_centrado2">Videojuegos</h2>
+            <div class="conjunto_servicios contenedor">
+                <!-- Primer Servicio -->
+                <div class="servicio">
+                    <img src="/img/R.png" alt="Honkai:Star Rail">
+                    <h3>Honkai:Star Rail</h3>
+                    <p>Honkai:Star Rail es un RPG de estrategia de HoYoverse (llamado miHoYo en China), anunciado a finales de 2021 para Microsoft Windows, iOS y Android.​ Como la cuarta entrega principal de la serie Honkai, el juego se sitúa en el universo de Honkai Impact 3rd, siguiendo las aventuras de un grupo de personajes que viajan a bordo de un tren espacial.​ Su lanzamiento oficial fue el 26 de abril de 20235​ para Windows y dispositivos móviles.</p>
+                    <a href="https://hsr.hoyoverse.com/es-es/home" class="boton-saber-mas">Saber más ...</a>
+                </div>
+                <!-- Segundo Servicio -->
+                <div class="servicio">
+                    <img src="/img/OIP.jpeg" alt="Call Of Duty:Mobile">
+                    <h3>Call Of Duty: Mobile</h3>
+                    <p>Call of Duty: Mobile es la versión de teléfono del videojuego Call of Duty. Es un videojuego de disparos en primera persona desarrollado por Activision y TiMi Studios de Tencent Games para la plataforma de Android e IOS. Fue lanzado el 1 de octubre de 2019.</p>
+                    <a href="https://www.callofduty.com/mobile" class="boton-saber-mas">Saber más ...</a>
+                </div>
+                <!-- Tercer Servicio -->
+                <div class="servicio">
+                    <img src="/img/R.jpeg" alt="Roboquest">
+                    <h3>Roboquest</h3>
+                    <p>Roboquest es un FPS Roguelite rápido en un mundo futuro chamuscado. ¡Eres un Guardián reiniciado, listo para patear traseros metálicos! Lucha con un amigo o solo y aniquila hordas de robots letales en entornos en constante cambio.</p>
+                    <a href="https://store.steampowered.com/app/692890/Roboquest/" class="boton-saber-mas">Saber más ...</a>
+                </div>
+                <!-- Cuarto Servicio -->
+                <div class="servicio">
+                    <img src="/img/8.jpeg" alt="Lorem Ipsum">
+                    <h3>Deep Rock Galactic</h3>
+                    <p>Deep Rock Galactic es un shooter cooperativo de ciencia ficción en primera persona con enanos espaciales de armas tomar, entornos totalmente destruibles, cuevas generadas procedimentalmente y hordas interminables de monstruos alienígenas.</p>
+                    <a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/" class="boton-saber-mas">Saber más ...</a>
+                </div>
+                <!-- Quinto Servicio -->
+                <div class="servicio">
+                    <img src="/img/ATRI -My Dear Moments-.jpeg" alt="Lorem Ipsum">
+                    <h3>ATRI -My Dear Moments-</h3>
+                    <p>"As the world sank, I found you." In the near future, a sudden and unexplained sea rise has left much of human civilization underwater. In a little town slowly being enveloped by the ocean, an unforgettable summer is about to begin for a boy and a mysterious robot girl...</p>
+                    <a href="https://store.steampowered.com/app/1230140/ATRI_My_Dear_Moments/" class="boton-saber-mas">Saber más ...</a>
+                </div>
+                <!-- Sexto Servicio -->
+                <div class="servicio">
+                    <img src="/img/NieR_Automata.jpeg" alt="Lorem Ipsum">
+                    <h3>NieR:Automata</h3>
+                    <p>NieR: Automata narra la historia de los androides 2B, 9S y A2, que luchan para recuperar el mundo distópico dirigido por las máquinas que han invadido unas poderosas formas de vida mecánicas.</p>
+                    <a href="https://store.steampowered.com/app/524220/NieRAutomata/" class="boton-saber-mas">Saber más ...</a>
+                </div>
+            </div>
+        </section>
+        
